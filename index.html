@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shubhaa — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Shubhaa, a computer science student. HTML, CSS, SQL, and C++ fundamentals."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,560;8..60,650&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c1624'/%3E%3Crect x='6' y='8' width='20' height='2' fill='%23f0b7c6'/%3E%3Crect x='6' y='14' width='14' height='2' fill='%23cbb8ef'/%3E%3Crect x='6' y='20' width='18' height='2' fill='%23b7e0d0'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="header-banner">Computer Science · Student Portfolio</p>
+      <p class="brand-lockup">
+        <a class="brand" href="#top">Shubhaa</a>
+        <small>Computer Science Student</small>
+      </p>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Portfolio</p>
+        <h1 id="hero-title">Shubhaa</h1>
+        <p class="lede">
+          Computer science student with a working foundation in HTML, CSS, SQL,
+          and the fundamentals of C++. Collaboration and clear communication
+          support the technical work.
+        </p>
+        <p class="hero-actions">
+          <a class="button" href="#work">View projects</a>
+          <a class="text-link" href="#contact">Contact</a>
+        </p>
+      </section>
+
+      <section id="about" class="panel" aria-labelledby="about-title">
+        <header class="section-head">
+          <p class="kicker">01</p>
+          <h2 id="about-title">About</h2>
+        </header>
+        <p>
+          Shubhaa studies computer science and builds pages and data work from
+          a defined set of tools: semantic HTML, CSS for layout and
+          presentation, SQL for relational data, and C++ at a foundational level.
+        </p>
+        <p>
+          Collaboration covers shared tasks and coordinated delivery.
+          Communication covers precise written and verbal explanation of the
+          work.
+        </p>
+      </section>
+
+      <section id="work" class="panel" aria-labelledby="work-title">
+        <header class="section-head">
+          <p class="kicker">02</p>
+          <h2 id="work-title">Projects</h2>
+        </header>
+        <p class="project-toolbar">
+          <button type="button" id="add-project">Add project</button>
+        </p>
+        <form id="project-form" hidden>
+          <p>
+            <label for="project-title">Title</label>
+            <input id="project-title" name="title" type="text" required maxlength="80" />
+          </p>
+          <p>
+            <label for="project-summary">Summary</label>
+            <textarea id="project-summary" name="summary" required maxlength="280" rows="4"></textarea>
+          </p>
+          <p>
+            <label for="project-year">Year</label>
+            <input id="project-year" name="year" type="number" required min="2000" max="2100" value="2026" />
+          </p>
+          <p>
+            <label for="project-area">Area</label>
+            <select id="project-area" name="area" required>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="SQL">SQL</option>
+              <option value="C++">C++</option>
+              <option value="Coursework">Coursework</option>
+            </select>
+          </p>
+          <p class="form-actions">
+            <button type="submit">Save project</button>
+            <button type="button" id="cancel-project">Cancel</button>
+          </p>
+        </form>
+        <p id="project-empty">No projects are listed.</p>
+        <section id="project-list" aria-label="Project cards"></section>
+      </section>
+
+      <section id="skills" class="panel" aria-labelledby="skills-title">
+        <header class="section-head">
+          <p class="kicker">03</p>
+          <h2 id="skills-title">Skills</h2>
+        </header>
+        <dl>
+          <dt>HTML</dt>
+          <dd>Semantic documents, navigation, forms, and page structure.</dd>
+          <dt>CSS</dt>
+          <dd>Layout, responsive presentation, and a consistent visual system.</dd>
+          <dt>SQL</dt>
+          <dd>Tables, queries, and relational data.</dd>
+          <dt>C++</dt>
+          <dd>Fundamentals: syntax, control flow, and basic problem solving.</dd>
+          <dt>Collaboration</dt>
+          <dd>Shared tasks, coordinated work, and reliable follow-through.</dd>
+          <dt>Communication</dt>
+          <dd>Clear written and verbal explanation of technical work.</dd>
+        </dl>
+      </section>
+
+      <section id="contact" class="panel" aria-labelledby="contact-title">
+        <header class="section-head">
+          <p class="kicker">04</p>
+          <h2 id="contact-title">Contact</h2>
+        </header>
+        <p>Direct correspondence for academic and project matters.</p>
+        <address>
+          <ul>
+            <li>
+              <p>Primary</p>
+              <a href="mailto:shubhaa2009@gmail.com">shubhaa2009@gmail.com</a>
+            </li>
+            <li>
+              <p>Academic</p>
+              <a href="mailto:shubhaa.cse@gmail.com">shubhaa.cse@gmail.com</a>
+            </li>
+          </ul>
+        </address>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <section aria-labelledby="footer-name">
+        <h2 id="footer-name">Shubhaa</h2>
+        <p>Computer science student. HTML, CSS, SQL, and C++ fundamentals.</p>
+      </section>
+      <nav aria-label="Footer">
+        <h2>Sections</h2>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        <h2>Correspondence</h2>
+        <ul>
+          <li><a href="mailto:shubhaa2009@gmail.com">shubhaa2009@gmail.com</a></li>
+          <li><a href="mailto:shubhaa.cse@gmail.com">shubhaa.cse@gmail.com</a></li>
+        </ul>
+      </address>
+      <p class="legal"><small>© 2026 Shubhaa. All rights reserved.</small></p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
